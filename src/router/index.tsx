@@ -1,7 +1,8 @@
 import {useRoutes} from "react-router-dom"
-import Home from "./home/Home"
-import About from "./about/About"
+import Product from "./product/Product"
 import Layout from "./layout/Layout"
+import Login from "./login/Login"
+import Crud from "./crud/Crud"
 const MainRouters = () => {
   return <>
   {
@@ -12,14 +13,18 @@ const MainRouters = () => {
         children:[
             {
                 path:"/",
-                element:<Home/>,
+                element:<Product/>,
             },
             {
-                path:"/about",
-                element:<About/>,
+                path:"/crud",
+                element:<Crud/>,
             },
-        ]
+        ],
     },
+    {
+      path:"/login",
+      element:<Login/>,
+  },
     
   ])
 }

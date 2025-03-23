@@ -1,9 +1,9 @@
 import React from 'react'
 
-const About = () => {
+const Crud = () => {
   return (
     <div>About</div>
   )
 }
 
-export default React.memo(About)
+export default React.memo(Crud)
