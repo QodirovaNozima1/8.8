@@ -22,7 +22,8 @@ const Login: React.FC = () => {
       };
       
       return(
-        <div className='mx-auto mt-10'>
+        <div className='container mx-auto mt-10'>
+          <h1 className='text-2xl text-green-950 font-bold'>Log in </h1>
 <Form
           name="basic"
           labelCol={{ span: 8 }}
